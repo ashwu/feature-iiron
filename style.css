@@ -1,0 +1,309 @@
+body {
+	margin: 0;
+	background: url('img/classy_fabric.png');
+}
+
+/* PURPLE BAR, LOGO, COVER PHOTO */
+
+header {
+	padding: 0.4em 0 0.4em 0.2;
+	height: 2.25em;
+	background-color: #501f84; /* this is NBN purple */
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#logo {
+	width: 2.25em;
+}
+
+#hero {
+	position: relative;
+}
+
+.cover-img{
+	width: 100%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	z-index: -1;
+	position: relative;
+}
+
+/* HEADLINE, SUBHEAD, BYLINE AND HORIZONTAL RULE */
+
+#hed-dek {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.headline {
+	right: 100px;
+	bottom: 100px;
+	padding-right: 0.8em;
+	font-size: 3.6em;
+	font-family: "Roboto", sans-serif;
+	z-index: 100;
+	float: right;
+	text-align: right;
+	color: #ffffff;
+	position: absolute;
+	line-height: 0.7em;
+	border-right: 20px double #b21212;
+}
+
+h1 {
+	margin: 0.5em 0 0.5em 0;
+}
+
+.dek {
+	font-size: 0.4em;
+	text-align: right;
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 500;
+	line-height: 1.2em;
+	clear:both;
+}
+
+.byline {
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 0.3em;
+	text-align: right;
+	color: #ffffff;
+	line-height: 1.3em;
+	float: right;
+}
+
+/* BODY */
+
+#body-full {
+	margin-top: 4em;
+}
+
+.body-text {
+	width: 45%;
+	max-width: 630px;
+	margin: .75em auto .75em auto;
+	font-family: "Georgia", serif;
+	font-size: 1.1em;
+	line-height: 1.8em;
+	color: #ffffff;
+}
+
+span.red {
+	color: #b21212;
+}
+
+.center {
+	width: 45%;
+	max-width: 630px;
+	margin: .75em auto .75em auto;
+}
+
+.footnote {
+	width: 45%;
+	font-size: 0.9em;
+	text-align: center;
+	color: #bebebe;
+	margin: 1em auto 0.5em auto;
+}
+
+.subhead, .dropcap{
+	color: #b21212;
+	font-weight: bold;
+	font-family: "Roboto";
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.dropcap {
+	font-size: 4em;
+}
+
+a {
+	text-decoration: none;
+	color: #b21212;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/* IMAGES */
+
+.inline-img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.inline-img-lg {
+	width: 80%;
+	max-width: 850px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.side {
+	width: 80%;
+	/*max-width: 900px;*/
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+figcaption {
+	color: #aaaaaa;
+	font-weight: 300;
+	font-size: 0.9em;
+	font-family: "Proxima Nova", sans-serif;
+	line-height: 1.25em;
+}
+
+figure {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+/* QUOTES */
+
+.quote {
+	display: block;
+	width: 300px;
+	color: #555555;
+	font-size: 1.25em;
+	font-weight: 300;
+	line-height: 1.5em;
+	display: block;
+	font-family: "Proxima Nova", sans-serif;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.right{
+	float: right;
+	margin-right: 20%;
+	margin-left: 2em;
+	padding-left: 2em;
+	border-left: 3px solid #b21212;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+
+.left {
+	float: left;
+	text-align: right;
+	margin-right: 2em;
+	margin-left: 17%;
+	padding-right: 2em;
+	border-right: 3px solid #b21212;
+/*	border-top: none;
+	border-bottom: none;
+	border-left: none;*/
+}
+
+/* FOOTER BAR, FOOTER TEXT */
+
+footer {
+	padding-right: 0.5em;
+	height: 5em;
+	background-color: #501f84; /* this is NBN purple */
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+footer p {
+	color: #ffffff;
+	width: 45%;
+	max-width: 630px;
+	margin: .75em auto .75em auto;
+	font-size: 0.9em;
+	font-family: "Proxima Nova", sans-serif;
+	line-height: 0.9em;
+} 
+
+footer p a {
+	color: #ffffff;
+}
+
+
+
+/*media queries*/
+@media screen and (max-width: 600px) {
+	#hed-dek{
+		width: 100%;
+	}
+
+	h1{
+		width: 85% auto 0 auto;
+		font-size: 3em;
+	}
+
+	h2{
+		width: 85%;
+		font-size: 1.2em;
+	}
+
+	.body-text {
+		width: 80%;
+	}
+
+	.inline-img, .inline-img-lg, .center {
+		width: 100%;
+	}
+
+	.quote {
+		display: block;
+		width: 50%;
+		color: #555555;
+		font-size: 1em;
+		line-height: 1.5em;
+		font-family: sans-serif;
+		text-align: center;
+	}
+	
+	.right {
+		border-top: 1px solid #aaaaaa;
+		border-bottom: 1px solid #aaaaaa;
+		border-right: none;
+		border-left: none;
+		padding-right: 1.3em;
+		margin-left: 1em;
+		margin-top: 1em;
+	}
+
+	.left {
+		border-top: 1px solid #aaaaaa;
+		border-bottom: 1px solid #aaaaaa;
+		border-right: none;
+		border-left: none;
+		padding-left: 1.3em;
+		margin-left: 4em;
+		margin-top: 1em;
+	}
+
+	footer {
+		padding-right: 0.5em;
+		height: 5em;
+		background-color: #501f84; /* this is NBN purple */
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	footer p {
+		width: 80%;
+
+	}
+}
