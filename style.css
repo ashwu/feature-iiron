@@ -149,14 +149,6 @@ a:hover{
 	margin-left: auto;
 }
 
-.side {
-	width: 80%;
-	/*max-width: 900px;*/
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-}
-
 figcaption {
 	color: #aaaaaa;
 	font-weight: 300;
@@ -175,7 +167,7 @@ figure {
 .quote {
 	display: block;
 	width: 300px;
-	color: #555555;
+	color: #b6b6b6;
 	font-size: 1.25em;
 	font-weight: 300;
 	line-height: 1.5em;
@@ -191,9 +183,6 @@ figure {
 	margin-left: 2em;
 	padding-left: 2em;
 	border-left: 3px solid #b21212;
-	border-top: none;
-	border-bottom: none;
-	border-right: none;
 }
 
 .left {
@@ -203,9 +192,6 @@ figure {
 	margin-left: 17%;
 	padding-right: 2em;
 	border-right: 3px solid #b21212;
-/*	border-top: none;
-	border-bottom: none;
-	border-left: none;*/
 }
 
 /* FOOTER BAR, FOOTER TEXT */
@@ -238,19 +224,70 @@ footer p a {
 
 
 /*media queries*/
+
+@media screen and (max-width: 1000px) {
+	.headline {
+    	bottom: 30px;
+    	padding-right: 0.6em;
+    	font-size: 3.1em;
+	}
+
+	.body-text {
+		width: 60%;
+	}
+
+	.quote {
+		width: 22%;
+	}
+
+	.right{
+		margin-right: 10%;
+	}
+
+	.left {
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.headline {
+    	bottom: 14px;
+    	padding-right: 0.6em;
+    	font-size: 2.5em;
+    	border-right: 15px double #b21212;
+	}
+
+	.body-text {
+		font-size: 0.9em;
+	}
+
+	.quote {
+		width: 20%;
+		font-size: 0.9em;
+	}
+
+	.right{
+		margin-right: 10%;
+	}
+
+	.left {
+		margin-left: 10%;
+	}
+}
+
+
 @media screen and (max-width: 600px) {
-	#hed-dek{
-		width: 100%;
+	.headline {
+		right: 40px;
+		font-size: 2em;
 	}
 
-	h1{
-		width: 85% auto 0 auto;
-		font-size: 3em;
+	.dek {
+		font-size: 0.55em
 	}
 
-	h2{
-		width: 85%;
-		font-size: 1.2em;
+	.byline {
+		font-size: 0.4em;
 	}
 
 	.body-text {
@@ -262,18 +299,15 @@ footer p a {
 	}
 
 	.quote {
-		display: block;
-		width: 50%;
-		color: #555555;
+		width: 60%;
 		font-size: 1em;
 		line-height: 1.5em;
-		font-family: sans-serif;
 		text-align: center;
 	}
 	
 	.right {
-		border-top: 1px solid #aaaaaa;
-		border-bottom: 1px solid #aaaaaa;
+		border-top: 3px solid #b21212;
+		border-bottom: 3px solid #b21212;
 		border-right: none;
 		border-left: none;
 		padding-right: 1.3em;
@@ -282,8 +316,8 @@ footer p a {
 	}
 
 	.left {
-		border-top: 1px solid #aaaaaa;
-		border-bottom: 1px solid #aaaaaa;
+		border-top: 3px solid #b21212;
+		border-bottom: 3px solid #b21212;
 		border-right: none;
 		border-left: none;
 		padding-left: 1.3em;
@@ -307,3 +341,33 @@ footer p a {
 
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.headline {
+		border-top: 3px solid #b21212;
+		margin-top: 35px;
+		padding-top: 30px;
+	    font-size: 2.4em;
+	    text-align: center;
+	    line-height: 0.7em;
+	    border-right: none;
+	    float: none;
+	    position: static;
+	}
+
+	.dek {
+		font-size: 0.55em;
+		float: none;
+		text-align: center;
+	}
+
+	.byline {
+		font-size: 0.4em;
+		float: none;
+		text-align: center;
+		padding-bottom: 35px;
+		border-bottom: 3px solid #b21212;;
+	}
+}
+
+
