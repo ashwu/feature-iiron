@@ -300,6 +300,7 @@ footer p a {
 
 	.quote {
 		width: 60%;
+		margin: 40px auto;
 		font-size: 1em;
 		line-height: 1.5em;
 		text-align: center;
