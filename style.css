@@ -1,17 +1,16 @@
 body {
 	margin: 0;
-	background: url('img/classy_fabric.png');
+	/*background: url('img/classy_fabric.png');*/
 }
 
 /* PURPLE BAR, LOGO, COVER PHOTO */
 
 header {
-	padding: 0.4em 0 0.4em 0.2;
+	padding: 0.5em;
 	height: 2.25em;
 	background-color: #501f84; /* this is NBN purple */
 	display: block;
 	width: 100%;
-	margin: 0 auto;
 }
 
 #logo {
@@ -53,6 +52,7 @@ header {
 	position: absolute;
 	line-height: 0.7em;
 	border-right: 20px double #b21212;
+	text-shadow: 1.5px 1.5px 4px #494848;
 }
 
 h1 {
@@ -62,14 +62,15 @@ h1 {
 .dek {
 	font-size: 0.4em;
 	text-align: right;
-	font-family: "Proxima Nova", sans-serif;
-	font-weight: 500;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
 	line-height: 1.2em;
-	clear:both;
+	clear: both;
 }
 
 .byline {
-	font-family: "Proxima Nova", sans-serif;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
 	font-size: 0.3em;
 	text-align: right;
 	color: #ffffff;
@@ -90,7 +91,7 @@ h1 {
 	font-family: "Georgia", serif;
 	font-size: 1.1em;
 	line-height: 1.8em;
-	color: #ffffff;
+	color: #363636;
 }
 
 span.red {
@@ -107,14 +108,14 @@ span.red {
 	width: 45%;
 	font-size: 0.9em;
 	text-align: center;
-	color: #bebebe;
+	color: #363636;
 	margin: 1em auto 0.5em auto;
 }
 
 .subhead, .dropcap{
 	color: #b21212;
 	font-weight: bold;
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	text-decoration: none;
 	font-size: 2em;
 	text-transform: uppercase;
@@ -153,7 +154,7 @@ figcaption {
 	color: #aaaaaa;
 	font-weight: 300;
 	font-size: 0.9em;
-	font-family: "Proxima Nova", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	line-height: 1.25em;
 }
 
@@ -168,11 +169,11 @@ figure {
 	display: block;
 	width: 300px;
 	color: #b6b6b6;
-	font-size: 1.25em;
+	font-size: 1.1em;
 	font-weight: 300;
 	line-height: 1.5em;
 	display: block;
-	font-family: "Proxima Nova", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	margin-bottom: 40px;
 	margin-top: 40px;
 }
@@ -213,7 +214,7 @@ footer p {
 	max-width: 630px;
 	margin: .75em auto .75em auto;
 	font-size: 0.9em;
-	font-family: "Proxima Nova", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	line-height: 0.9em;
 } 
 
