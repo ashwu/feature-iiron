@@ -1,12 +1,12 @@
 body {
 	margin: 0;
-	background-color: #e9f6ff;
+	background: url('img/classy_fabric.png');
 }
 
 /* PURPLE BAR, LOGO, COVER PHOTO */
 
 header {
-	padding: 0.5em;
+	padding: 0.4em 0 0.4em 0.2;
 	height: 2.25em;
 	background-color: #501f84; /* this is NBN purple */
 	display: block;
@@ -18,12 +18,18 @@ header {
 	width: 2.25em;
 }
 
+#hero {
+	position: relative;
+}
+
 .cover-img{
 	width: 100%;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	height: auto;
+	z-index: -1;
+	position: relative;
 }
 
 /* HEADLINE, SUBHEAD, BYLINE AND HORIZONTAL RULE */
@@ -34,40 +40,48 @@ header {
 	margin-left: auto;
 }
 
-h1 {
-	font-size: 4.5em;
-	font-family: "Proxima Nova", sans-serif;
-	font-weight: 900;
-	text-transform: uppercase;
-	text-align: center;
+.headline {
+	right: 100px;
+	bottom: 100px;
+	padding-right: 0.8em;
+	font-size: 3.6em;
+	font-family: "Roboto", sans-serif;
+	z-index: 100;
+	float: right;
+	text-align: right;
+	color: #ffffff;
+	position: absolute;
 	line-height: 0.7em;
+	border-right: 20px double #b21212;
 }
 
-h2 {
-	font-size: 1.1em;
-	text-align: center;
+h1 {
+	margin: 0.5em 0 0.5em 0;
+}
+
+.dek {
+	font-size: 0.4em;
+	text-align: right;
 	font-family: "Proxima Nova", sans-serif;
 	font-weight: 500;
-	font-size: 1.5em;
-	/*background-color: rgba(255,255,255,0.5);*/
+	line-height: 1.2em;
+	clear:both;
 }
 
-h3 {
-	text-align: center;
+.byline {
 	font-family: "Proxima Nova", sans-serif;
-	font-weight: 700;
-	font-size: 1.2em;
-	text-align: center;
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
-
-hr {
-	width: 10em;
-	margin-bottom: 3em;
+	font-size: 0.3em;
+	text-align: right;
+	color: #ffffff;
+	line-height: 1.3em;
+	float: right;
 }
 
 /* BODY */
+
+#body-full {
+	margin-top: 4em;
+}
 
 .body-text {
 	width: 45%;
@@ -76,11 +90,11 @@ hr {
 	font-family: "Georgia", serif;
 	font-size: 1.1em;
 	line-height: 1.8em;
+	color: #ffffff;
 }
 
-.pink {
-	background-color: #FFC1C1;
-	padding: 0 0.35em;
+span.red {
+	color: #b21212;
 }
 
 .center {
@@ -89,16 +103,30 @@ hr {
 	margin: .75em auto .75em auto;
 }
 
-.subhead {
+.footnote {
+	width: 45%;
+	font-size: 0.9em;
+	text-align: center;
+	color: #bebebe;
+	margin: 1em auto 0.5em auto;
+}
+
+.subhead, .dropcap{
+	color: #b21212;
 	font-weight: bold;
-	font-family: "Proxima Sans", sans-serif;
+	font-family: "Roboto";
+	text-decoration: none;
+	font-size: 2em;
 	text-transform: uppercase;
-	text-decoration: underline;
-	padding-top: 1.8em;
+}
+
+.dropcap {
+	font-size: 4em;
 }
 
 a {
 	text-decoration: none;
+	color: #b21212;
 }
 
 a:hover{
@@ -114,7 +142,7 @@ a:hover{
 }
 
 .inline-img-lg {
-	width: 65%;
+	width: 80%;
 	max-width: 850px;
 	display: block;
 	margin-right: auto;
@@ -139,7 +167,7 @@ figure {
 .quote {
 	display: block;
 	width: 300px;
-	color: #555555;
+	color: #b6b6b6;
 	font-size: 1.25em;
 	font-weight: 300;
 	line-height: 1.5em;
@@ -154,22 +182,16 @@ figure {
 	margin-right: 20%;
 	margin-left: 2em;
 	padding-left: 2em;
-	border-left: 1px solid #aaaaaa;
-	border-top: none;
-	border-bottom: none;
-	border-right: none;
+	border-left: 3px solid #b21212;
 }
 
 .left {
 	float: left;
 	text-align: right;
 	margin-right: 2em;
-	margin-left: 20%;
+	margin-left: 17%;
 	padding-right: 2em;
-	border-right: 1px solid #aaaaaa;
-	border-top: none;
-	border-bottom: none;
-	border-left: none;
+	border-right: 3px solid #b21212;
 }
 
 /* FOOTER BAR, FOOTER TEXT */
@@ -202,19 +224,70 @@ footer p a {
 
 
 /*media queries*/
+
+@media screen and (max-width: 1000px) {
+	.headline {
+    	bottom: 30px;
+    	padding-right: 0.6em;
+    	font-size: 3.1em;
+	}
+
+	.body-text {
+		width: 60%;
+	}
+
+	.quote {
+		width: 22%;
+	}
+
+	.right{
+		margin-right: 10%;
+	}
+
+	.left {
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.headline {
+    	bottom: 14px;
+    	padding-right: 0.6em;
+    	font-size: 2.5em;
+    	border-right: 15px double #b21212;
+	}
+
+	.body-text {
+		font-size: 0.9em;
+	}
+
+	.quote {
+		width: 20%;
+		font-size: 0.9em;
+	}
+
+	.right{
+		margin-right: 10%;
+	}
+
+	.left {
+		margin-left: 10%;
+	}
+}
+
+
 @media screen and (max-width: 600px) {
-	#hed-dek{
-		width: 100%;
+	.headline {
+		right: 40px;
+		font-size: 2em;
 	}
 
-	h1{
-		width: 85% auto 0 auto;
-		font-size: 3em;
+	.dek {
+		font-size: 0.55em
 	}
 
-	h2{
-		width: 85%;
-		font-size: 1.2em;
+	.byline {
+		font-size: 0.4em;
 	}
 
 	.body-text {
@@ -226,18 +299,16 @@ footer p a {
 	}
 
 	.quote {
-		display: block;
-		width: 50%;
-		color: #555555;
+		width: 60%;
+		margin: 40px auto;
 		font-size: 1em;
 		line-height: 1.5em;
-		font-family: sans-serif;
 		text-align: center;
 	}
 	
 	.right {
-		border-top: 1px solid #aaaaaa;
-		border-bottom: 1px solid #aaaaaa;
+		border-top: 3px solid #b21212;
+		border-bottom: 3px solid #b21212;
 		border-right: none;
 		border-left: none;
 		padding-right: 1.3em;
@@ -246,8 +317,8 @@ footer p a {
 	}
 
 	.left {
-		border-top: 1px solid #aaaaaa;
-		border-bottom: 1px solid #aaaaaa;
+		border-top: 3px solid #b21212;
+		border-bottom: 3px solid #b21212;
 		border-right: none;
 		border-left: none;
 		padding-left: 1.3em;
@@ -271,3 +342,33 @@ footer p a {
 
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.headline {
+		border-top: 3px solid #b21212;
+		margin-top: 35px;
+		padding-top: 30px;
+	    font-size: 2.4em;
+	    text-align: center;
+	    line-height: 0.7em;
+	    border-right: none;
+	    float: none;
+	    position: static;
+	}
+
+	.dek {
+		font-size: 0.55em;
+		float: none;
+		text-align: center;
+	}
+
+	.byline {
+		font-size: 0.4em;
+		float: none;
+		text-align: center;
+		padding-bottom: 35px;
+		border-bottom: 3px solid #b21212;;
+	}
+}
+
+
